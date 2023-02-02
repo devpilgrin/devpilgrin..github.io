@@ -1,0 +1,86 @@
+# [Обязательное] Название сайта
+site_name: Материалы для собеседований.
+
+# Базовый адрес сайта
+site_url: https://www.mkdocs.org/
+
+# Описание сайта. Добавляется в meta в html-заголовке каждой страницы.
+site_description: Сборник вопросов и ответов для проведения собеседований соискателей по различным технологиям. Отделу рекрутинга посвящается...
+
+# Автор (или авторы) сайта. Добавляется в html-заголовок каждой страницы.
+site_author: Кудрявский Роман
+
+# Ссылка на репозиторий, в котором хранятся исходные материалы.
+repo_url: https://github.com/devpilgrin/interview-questions
+
+# Относительный путь, который в сочетании со ссылкой на репозиторий (repo_url)
+# и относительным адресом страницы даст адрес, по которому можно вызвать
+# редактор страницы. Для repo_url-ов известных площадок (например,
+# GitHub или GitLab можно оставить пустым - он подставится автоматически)
+edit_uri: ""
+
+# Информация о теме, которая будет применена для сгенерированного сайта.
+# И её параметрах
+theme:
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.path
+        - toc.integrate
+        - navigation.footer
+    name: material    
+    locale: ru
+    language: ru
+    logo: logo.jpeg
+    analytics: {gtag: 'G-274394082'}
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+
+# Структура навигации генерируемого сайта.
+nav:
+    - Домой: index.md
+    - Frontend:
+        - Angular: Frontend/Angular.md
+    - Backend:
+        - Java: Backend/Java/Java8.md
+        - Virtual Machine: Backend/Java/JavaVM.md
+        - Core: Backend/Java/JavaCore.md
+        - Collections Framework: Backend/Java/JavaCollectionsFramework.md
+        - Многопоточность: Backend/Java/Multithreading.md
+        - Потоки ввода/вывода: Backend/Java/InputOutputStreams.md
+        - Сериализация: Backend/Java/Serialization.md
+        - Сервлет: Backend/Java/Servlets.md
+        - JDBC: Backend/Java/JDBC.md
+        - Spring: Backend/Java/Spring.md
+
+
+extra_css:
+    - css/extra.css
+
+# Список подключённых расширений для препроцессора языка Markdown
+markdown_extensions:
+    - toc:
+        permalink: 
+    - admonition
+    - attr_list
+    - def_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: Copyright &copy; 2023 <a href="https://github.com/devpilgrin">Роман Кудрявский</a>.
+
+# Список использованных плагинов MkDocs
+plugins:
+    - search:
+        lang: ru
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/devpilgrin
+
