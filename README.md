@@ -1,2 +1,2 @@
-# devpilgrin..github.io
+# devpilgrin
 Сайт
